@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درع الأمان | منصة مكافحة الابتزاز - المطور أحمد</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #ffffff;
+            --accent: #38bdf8;
+            --danger: #ef4444;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: var(--bg);
+            background-image: radial-gradient(circle at top right, #1e293b, #0f172a);
+            margin: 0;
+            padding: 0;
+            color: #1e293b;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        header h1 { font-weight: 900; font-size: 2.5rem; margin: 0; }
+        header p { opacity: 0.8; font-size: 1.1rem; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover { transform: translateY(-8px); }
+
+        .card-header {
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: white;
+        }
+
+        .card-body { padding: 25px; flex-grow: 1; }
+
+        .cliche-box {
+            background: #f8fafc;
+            border-right: 5px solid var(--accent);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #475569;
+        }
+
+        .cliche-box b { color: var(--danger); display: block; margin-bottom: 5px; }
+
+        .btn {
+            display: block;
+            text-align: center;
+            padding: 14px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* ألوان الهوية */
+        .fb { background: #1877F2; }
+        .ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .sc { background: #FFFC00; color: #000; }
+        .tt { background: #000000; }
+        .xx { background: #000000; }
+
+        footer {
+            margin-top: 60px;
+            padding: 40px;
+            background: rgba(0,0,0,0.3);
+            color: white;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .dev-name {
+            background: var(--accent);
+            color: #000;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🛡️ بوابة الحماية الموحدة</h1>
+    <p>روابط النماذج الرسمية للبلاغات الحساسة والابتزاز</p>
+</header>
+
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <div class="card-header fb">فيسبوك | Facebook</div>
+            <div class="card-body">
+                <div class="cliche-box">
+                    <b>💡 إجراء الإغلاق:</b>
+                    هذا النموذج مخصص لمراجعة المحتوى الذي ينتهك المعايير المجتمعية والابتزاز. سيتم فحص الرابط وإزالة المحتوى بشكل نهائي وحظر حساب المبتز.
+                </div>
+                <a href="https://www.facebook.com/help/contact/516343134409068" target="_blank" class="btn fb">فتح النموذج المباشر</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header ig">إنستجرام | Instagram</div>
+            <div class="card-body">
+                <div class="cliche-box">
+                    <b>💡 إجراء الإغلاق:</b>
+                    رابط مباشر لتقديم بلاغ عن محتوى غير قانوني أو صور حميمية تم نشرها بدون موافقة. يتم التعامل مع هذا البلاغ بسرية تامة وسرعة قصوى.
+                </div>
+                <a href="https://help.instagram.com/contact/512241091300432" target="_blank" class="btn ig">فتح النموذج المباشر</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header sc">سناب شات | Snapchat</div>
+            <div class="card-body">
+                <div class="cliche-box">
+                    <b>💡 إجراء الإغلاق:</b>
+                    نموذج بلاغ سناب شات الرسمي للمحتوى الجنسي المسرب والابتزاز. اتبع الخطوات لإيقاف تداول اللقطات وتعطيل الحساب المسيء.
+                </div>
+                <a href="https://help.snapchat.com/hc/ar/requests/new?co=true&tf_23701027754644=cf_report_violation_nudity_sexual_content_leak&ticket_form_id=17471023300884" target="_blank" class="btn sc">فتح النموذج المباشر</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header tt">تيك توك | TikTok</div>
+            <div class="card-body">
+                <div class="cliche-box">
+                    <b>💡 إجراء الإغلاق:</b>
+                    مركز الملاحظات والبلاغات في تيك توك. استخدم هذا الرابط لإرسال بلاغ تقني ضد الفيديوهات التي تمارس الابتزاز لإزالتها فوراً.
+                </div>
+                <a href="https://www.tiktok.com/legal/report/feedback?lang=ar" target="_blank" class="btn tt">فتح النموذج المباشر</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header xx">منصة X | إكس</div>
+            <div class="card-body">
+                <div class="cliche-box">
+                    <b>💡 إجراء الإغلاق:</b>
+                    نموذج الأمان والمحتوى الحساس في منصة X. لحماية الخصوصية ومنع نشر الوسائط الشخصية بدون إذن تحت طائلة الحظر النهائي.
+                </div>
+                <a href="https://help.x.com/ar/forms/safety-and-sensitive-content" target="_blank" class="btn xx">فتح النموذج المباشر</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="dev-name">المطور أحمد</div>
+    <p>تم بناء هذا النظام لخدمة الضحايا ومحاربة الجرائم الإلكترونية.</p>
+    <div style="font-size: 0.8rem; opacity: 0.6;">جميع الحقوق محفوظة للمطور أحمد © 2026</div>
+</footer>
+
+</body>
+</html>
